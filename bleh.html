@@ -4,6 +4,87 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://github.com/allison-s-quan/hi/blob/main/bleh.css">
+    <style>
+      * {
+  box-sizing: border-box;
+  padding: none;
+  margin: 0;
+  background: #000;
+}
+
+html {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+header {
+  font-size: 20px;
+  display: flex;
+  text-align: left;
+  width: 80%;
+  margin: 10% 10% 10% 10%;
+}
+.outline {
+  font-size: 50px;
+  /*background: -webkit-linear-gradient(50deg, #f32170 5%, #ff6b08 53%, #cf23cf 91%); */
+  background: linear-gradient(#009aff, #00ffe7);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: #000;
+  animation: colors 15s infinite;
+}
+
+@keyframes colors {
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  } 50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+nav {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+li {
+  margin: 0.313em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #f32170;
+  
+}
+
+
+@media only screen and (min-width:768px) {
+  header {
+    font-size: 40px;
+  }
+
+  .outline {
+    font-size: 90px;
+  }
+}
+    </style>
   </head>
   <body>
     <nav>
